@@ -54,7 +54,7 @@ function rowToPlayer(row) {
 
   service.get('players/:age', (request, response) => {
     const parameters = [
-      request.params.age,
+      parseInt(request.params.age),
       
     ];
   
