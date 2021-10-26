@@ -6,7 +6,5 @@ CREATE TABLE players (
   name VARCHAR(255),
   age INT
 
-  is_deleted INT DEFAULT 0,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
 );
