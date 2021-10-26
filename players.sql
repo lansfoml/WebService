@@ -7,7 +7,6 @@ CREATE TABLE players (
   l_name VARCHAR(255),
   age INT,
   team VARCHAR(255),
-  
 
 
 );
