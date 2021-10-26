@@ -54,7 +54,7 @@ function rowToPlayer(row) {
   });
   */
 
-  service.get('fname/:firstName', (request, response) => {
+  service.get('players/:firstName', (request, response) => {
     
     const parameters = request.params.firstName,
 
