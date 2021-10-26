@@ -57,7 +57,7 @@ function rowToPlayer(row) {
     
     const parameters = request.params.firstName,
 
-    const query = 'SELECT * FROM players WHERE firstName = ?';
+    query = 'SELECT * FROM players WHERE firstName = ?';
     connection.query(query, parameters, (error, rows) => {
       if (error) {
         response.status(500);
