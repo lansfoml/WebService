@@ -26,7 +26,9 @@ function rowToPlayer(row) {
       id: row.id,
       number: row.number,
       name: row.name,
-      age : row.age
+      age : row.age,
+      team: row.team,
+      height: row.height
     };
   }
 
@@ -60,10 +62,12 @@ function rowToPlayer(row) {
     const parameters = [
       request.body.number,
       request.body.name,
-      request.body.age
+      request.body.age,
+      request.body.team,
+      request.body.height
     ];
   
-    const query = 'INSERT INTO players(number, name, age) VALUES (?, ?, ?)';
+    const query = 'INSERT INTO players(number, name, age, team, height) VALUES (?, ?, ?, ?, ?)';
     connection.query(query, parameters, (error, result) => {
       if (error) {
         response.status(500);
