@@ -55,7 +55,7 @@ function rowToPlayer(row) {
 
   service.get('players/:f_name', (request, response) => {
     const parameters = [
-      request.params.name,
+      request.params.f_name,
       
     ];
   
