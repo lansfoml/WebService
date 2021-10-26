@@ -52,7 +52,7 @@ function rowToPlayer(row) {
     });
   });
 
-  service.get('player/:age', (request, response) => {
+  service.get('players/:age', (request, response) => {
     const parameters = [
       request.params.age,
       
