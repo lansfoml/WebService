@@ -46,7 +46,7 @@ function rowToPlayer(row) {
         const players = rows.map(rowToPlayer);
         response.json({
           ok: true,
-          results: rows.map(rowToHuman),
+          results: rows.map(rowToPlayer),
         });
       }
     });
