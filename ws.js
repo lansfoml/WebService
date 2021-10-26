@@ -47,7 +47,7 @@ function rowToPlayer(row) {
           results: error.message,
         });
       } else {
-        const players = rows.map(rowToHuman);
+        const players = rows.map(rowToPlayer);
         response.json({
           ok: true,
           results: rows.map(rowToHuman),
@@ -64,7 +64,7 @@ function rowToPlayer(row) {
       request.body.name,
       request.body.age,
       request.body.team,
-      request.body.height
+      request.body.height,
     ];
   
     const query = 'INSERT INTO players(number, name, age, team, height) VALUES (?, ?, ?, ?, ?)';
