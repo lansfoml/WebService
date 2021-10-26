@@ -4,7 +4,7 @@ CREATE TABLE players (
   id INT,
   number INT,
   name VARCHAR(255),
-  dob INT
+  age INT
 
   is_deleted INT DEFAULT 0,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
