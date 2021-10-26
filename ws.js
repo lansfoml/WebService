@@ -52,13 +52,13 @@ function rowToPlayer(row) {
     });
   });
 
-  service.get('player/:name', (request, response) => {
+  service.get('player/:age', (request, response) => {
     const parameters = [
-      request.params.name,
+      request.params.age,
       
     ];
   
-    const query = 'SELECT * FROM players WHERE name = ?';
+    const query = 'SELECT * FROM players WHERE age = ?';
     connection.query(query, parameters, (error, rows) => {
       if (error) {
         response.status(500);
