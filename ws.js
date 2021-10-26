@@ -32,7 +32,7 @@ function rowToPlayer(row) {
       
     };
   }
-
+/*
   service.get('/all', (request, response) => {
   
     const query = 'SELECT * FROM players';
@@ -52,6 +52,7 @@ function rowToPlayer(row) {
       }
     });
   });
+  */
 
   service.get('players/:firstName', (request, response) => {
     
