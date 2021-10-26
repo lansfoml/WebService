@@ -30,13 +30,9 @@ function rowToPlayer(row) {
     };
   }
 
-  service.get('/players/:id', (request, response) => {
-    const parameters = [
-      parseInt(request.params.id)
-      
-    ];
+  service.get('/all', (request, response) => {
   
-    const query = 'SELECT * FROM players WHERE id = ?';
+    const query = 'SELECT * FROM players';
     connection.query(query, parameters, (error, rows) => {
       if (error) {
         response.status(500);
