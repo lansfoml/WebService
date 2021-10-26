@@ -34,7 +34,7 @@ function rowToPlayer(row) {
 
   service.get('/all', (request, response) => {
   
-    const query = 'SELECT * FROM players WHERE id = ?';
+    const query = 'SELECT * FROM players';
     connection.query(query, (error, rows) => {
       if (error) {
         response.status(500);
