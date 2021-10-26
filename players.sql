@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS players;
 
 CREATE TABLE players (
-  id INT,
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
   number INT,
   firstName TEXT NOT NULL,
   lastName TEXT NOT NULL,
