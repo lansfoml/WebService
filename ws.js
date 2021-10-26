@@ -54,11 +54,11 @@ function rowToPlayer(row) {
   });
   */
 
-  service.get('players/:firstName', (request, response) => {
+  service.get('players/:id', (request, response) => {
     
-    const parameters = request.params.firstName,
+    const parameters = request.params.id,
 
-    query = 'SELECT * FROM players WHERE firstName = ? ORDER BY age DESC';
+    query = 'SELECT * FROM players WHERE id = ? ORDER BY age DESC';
     connection.query(query, parameters, (error, rows) => {
       if (error) {
         response.status(500);
@@ -100,6 +100,33 @@ function rowToPlayer(row) {
         response.json({
           ok: true,
           results: result.insertId,
+        });
+      }
+    });
+  });
+
+
+  service.patch('/players/:id', (request, response) => {
+    const parameters = [
+      request.body.number,
+      request.body.firstName,
+      request.body.lastName,
+      request.body.age,
+      request.body.team,
+      parseInt(request.params.id),
+    ];
+  
+    const query = 'UPDATE players SET number = ?, firstName = ?, lastName = ?, age = ?, team = ? WHERE id = ?';
+    connection.query(query, parameters, (error, result) => {
+      if (error) {
+        response.status(404);
+        response.json({
+          ok: false,
+          results: error.message,
+        });
+      } else {
+        response.json({
+          ok: true,
         });
       }
     });
