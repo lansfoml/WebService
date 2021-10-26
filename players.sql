@@ -13,4 +13,4 @@ CREATE TABLE players (
 );
 
 INSERT INTO players(id, number, firstName, lastName, age, team, is_deleted)
-VALUES(3,"j", "Reddick", 21, "Heat");
+VALUES(1,3,"j", "Reddick", 21, "Heat");
