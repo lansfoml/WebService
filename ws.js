@@ -25,10 +25,11 @@ function rowToPlayer(row) {
     return {
       id: row.id,
       number: row.number,
-      name: row.name,
+      f_name: row.f_name,
+      l_name: row.l_name,
       age: row.age,
       team: row.team,
-      height: row.height,
+      
     };
   }
 
@@ -52,13 +53,13 @@ function rowToPlayer(row) {
     });
   });
 
-  service.get('players/:name', (request, response) => {
+  service.get('players/:f_name', (request, response) => {
     const parameters = [
       request.params.name,
       
     ];
   
-    const query = 'SELECT * FROM players WHERE name = ?';
+    const query = 'SELECT * FROM players WHERE f_name = ?';
     connection.query(query, parameters, (error, rows) => {
       if (error) {
         response.status(500);
@@ -81,13 +82,14 @@ function rowToPlayer(row) {
   service.post('/players', (request, response) => {
     const parameters = [
       request.body.number,
-      request.body.name,
+      request.body.f_name,
+      request.body.l_name,
       request.body.age,
       request.body.team,
-      request.body.height,
+      
     ];
   
-    const query = 'INSERT INTO players(number, name, age, team, height) VALUES (?, ?, ?, ?, ?)';
+    const query = 'INSERT INTO players(number, f_name, l_name, age, team) VALUES (?, ?, ?, ?, ?)';
     connection.query(query, parameters, (error, result) => {
       if (error) {
         response.status(500);
