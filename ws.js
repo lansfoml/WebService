@@ -55,11 +55,8 @@ function rowToPlayer(row) {
 
   service.get('players/:firstName', (request, response) => {
     
-    const parameters = [
-      request.params.firstName,
-      
-    ];
-  
+    const parameters = request.params.firstName,
+
     const query = 'SELECT * FROM players WHERE firstName = ?';
     connection.query(query, parameters, (error, rows) => {
       if (error) {
