@@ -25,7 +25,8 @@ function rowToPlayer(row) {
     return {
       id: row.id,
       number: row.number,
-      name: row.name
+      name: row.name,
+      dob : row.dob
     };
   }
 
@@ -58,10 +59,11 @@ function rowToPlayer(row) {
   service.post('/players', (request, response) => {
     const parameters = [
       request.body.number,
-      request.body.name
+      request.body.name,
+      request.body.dob
     ];
   
-    const query = 'INSERT INTO players(number, name) VALUES (?, ?)';
+    const query = 'INSERT INTO players(number, name, dob) VALUES (?, ?)';
     connection.query(query, parameters, (error, result) => {
       if (error) {
         response.status(500);
