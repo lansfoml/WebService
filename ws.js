@@ -63,7 +63,7 @@ function rowToPlayer(row) {
       request.body.age
     ];
   
-    const query = 'INSERT INTO players(number, name, age) VALUES (?, ?)';
+    const query = 'INSERT INTO players(number, name, age) VALUES (?, ?, ?)';
     connection.query(query, parameters, (error, result) => {
       if (error) {
         response.status(500);
