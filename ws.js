@@ -26,7 +26,7 @@ function rowToPlayer(row) {
       id: row.id,
       number: row.number,
       name: row.name,
-      age : row.age,
+      age: row.age,
       team: row.team,
       height: row.height
     };
