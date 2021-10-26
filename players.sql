@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS players;
+
+CREATE TABLE players (
+  id INT,
+  number INT,
+  name VARCHAR(255),
+
+  is_deleted INT DEFAULT 0,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
