@@ -80,7 +80,7 @@ function rowToPlayer(row) {
 
   service.post('/players', (request, response) => {
     const parameters = [
-      request.body.id,
+      
       request.body.number,
       request.body.firstName,
       request.body.lastName,
@@ -89,7 +89,7 @@ function rowToPlayer(row) {
       
     ];
   
-    const query = 'INSERT INTO players(id, number, firstName, lastName, age, team) VALUES (?, ?, ?, ?, ?)';
+    const query = 'INSERT INTO players(number, firstName, lastName, age, team) VALUES (?, ?, ?, ?, ?)';
     connection.query(query, parameters, (error, result) => {
       if (error) {
         response.status(500);
