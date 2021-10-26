@@ -3,10 +3,11 @@ DROP TABLE IF EXISTS players;
 CREATE TABLE players (
   id INT,
   number INT,
-  f_name VARCHAR(255),
-  l_name VARCHAR(255),
+  firstName VARCHAR(255),
+  lastName VARCHAR(255),
   age INT,
-  team VARCHAR(255)
+  team VARCHAR(255),
+  is_deleted INT DEFAULT 0
 
 
 );
