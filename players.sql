@@ -4,7 +4,9 @@ CREATE TABLE players (
   id INT,
   number INT,
   name VARCHAR(255),
-  age INT
+  age INT,
+  team VARCHAR(255),
+  height VARCHAR(255)
 
 
 );
