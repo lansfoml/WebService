@@ -52,6 +52,30 @@ function rowToPlayer(row) {
     });
   });
 
+  service.get('player/:name', (request, response) => {
+    const parameters = [
+      request.params.name,
+      
+    ];
+  
+    const query = 'SELECT * FROM players WHERE name = ?';
+    connection.query(query, parameters, (error, rows) => {
+      if (error) {
+        response.status(500);
+        response.json({
+          ok: false,
+          results: error.message,
+        });
+      } else {
+        const players = rows.map(rowToPlayer);
+        response.json({
+          ok: true,
+          results: rows.map(rowToPlayer),
+        });
+      }
+    });
+  });
+
   service.use(express.json());
 
   service.post('/players', (request, response) => {
