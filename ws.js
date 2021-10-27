@@ -136,7 +136,7 @@ function rowToPlayer(row) {
   service.delete('/players/:id', (request, response) => {
     const parameters = [parseInt(request.params.id)];
   
-    const query = 'UPDATE memory SET is_deleted = 1 WHERE id = ?';
+    const query = 'UPDATE players SET is_deleted = 1 WHERE id = ?';
     connection.query(query, parameters, (error, result) => {
       if (error) {
         response.status(404);
