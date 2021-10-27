@@ -133,7 +133,7 @@ function rowToPlayer(row) {
     });
   });
 
-  service.delete('/memories/:id', (request, response) => {
+  service.delete('/players/:id', (request, response) => {
     const parameters = [parseInt(request.params.id)];
   
     const query = 'UPDATE memory SET is_deleted = 1 WHERE id = ?';
