@@ -243,8 +243,10 @@ function rowToPlayer(row) {
   });
 
   service.delete('/name/:firstName:lastName', (request, response) => {
-    const parameters = [parseInt(request.params.firstName),
-      parseInt(request.params.lastName)];
+    const parameters = [
+      request.params.firstName,
+      request.params.lastName,
+    ];
   
     const query = 'UPDATE players SET is_deleted = 1 WHERE firstName = ? AND lastName = ?';
     connection.query(query, parameters, (error, result) => {
