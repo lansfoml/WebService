@@ -33,7 +33,7 @@ function rowToPlayer(row) {
     };
   }
 
-  service.get('/players/:id', (request, response) => {
+  service.get('/id/:id', (request, response) => {
     
     const parameters = request.params.id,
 
