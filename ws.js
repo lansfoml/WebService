@@ -100,6 +100,28 @@ function rowToPlayer(row) {
     });
   });
 
+  service.get('/age/:age', (request, response) => {
+    
+    const parameters = request.params.age,
+
+    query = 'SELECT * FROM players WHERE age = ?';
+    connection.query(query, parameters, (error, rows) => {
+      if (error) {
+        response.status(500);
+        response.json({
+          ok: false,
+          results: error.message,
+        });
+      } else {
+        const players = rows.map(rowToPlayer);
+        response.json({
+          ok: true,
+          results: rows.map(rowToPlayer),
+        });
+      }
+    });
+  });
+
   service.get('/all', (request, response) => {
   
     const query = 'SELECT * FROM players WHERE is_deleted = 0';
