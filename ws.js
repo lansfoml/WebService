@@ -242,7 +242,7 @@ function rowToPlayer(row) {
     });
   });
 
-  service.delete('/name/:firstName:lastName', (request, response) => {
+  service.delete('/names/:firstName:lastName', (request, response) => {
     const parameters = [
       request.params.firstName,
       request.params.lastName,
