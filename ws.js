@@ -122,6 +122,28 @@ function rowToPlayer(row) {
     });
   });
 
+  service.get('/team/:team', (request, response) => {
+    
+    const parameters = request.params.team,
+
+    query = 'SELECT * FROM players WHERE team = ?';
+    connection.query(query, parameters, (error, rows) => {
+      if (error) {
+        response.status(500);
+        response.json({
+          ok: false,
+          results: error.message,
+        });
+      } else {
+        const players = rows.map(rowToPlayer);
+        response.json({
+          ok: true,
+          results: rows.map(rowToPlayer),
+        });
+      }
+    });
+  });
+
   service.get('/all', (request, response) => {
   
     const query = 'SELECT * FROM players WHERE is_deleted = 0';
