@@ -32,7 +32,7 @@ function rowToPlayer(row) {
       
     };
   }
-/*
+
   service.get('/all', (request, response) => {
   
     const query = 'SELECT * FROM players';
@@ -52,7 +52,7 @@ function rowToPlayer(row) {
       }
     });
   });
-  */
+  
 
   service.get('players/:id', (request, response) => {
     
@@ -132,3 +132,23 @@ function rowToPlayer(row) {
       }
     });
   });
+
+  service.delete('/memories/:id', (request, response) => {
+    const parameters = [parseInt(request.params.id)];
+  
+    const query = 'UPDATE memory SET is_deleted = 1 WHERE id = ?';
+    connection.query(query, parameters, (error, result) => {
+      if (error) {
+        response.status(404);
+        response.json({
+          ok: false,
+          results: error.message,
+        });
+      } else {
+        response.json({
+          ok: true,
+        });
+      }
+    });
+  });
+  
