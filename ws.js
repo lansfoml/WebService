@@ -37,7 +37,7 @@ function rowToPlayer(row) {
     
     const parameters = request.params.id,
 
-    query = 'SELECT * FROM players WHERE id = ? ORDER BY age DESC';
+    query = 'SELECT * FROM players WHERE id = ?';
     connection.query(query, parameters, (error, rows) => {
       if (error) {
         response.status(500);
