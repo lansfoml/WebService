@@ -35,7 +35,7 @@ function rowToPlayer(row) {
 
   service.get('/all', (request, response) => {
   
-    const query = 'SELECT * FROM players';
+    const query = 'SELECT * FROM players WHERE is_deleted = 0';
     connection.query(query, (error, rows) => {
       if (error) {
         response.status(500);
