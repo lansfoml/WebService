@@ -49,7 +49,6 @@ function rowToPlayer(row) {
     var options = {
       root: "/Users/matt/Desktop/Server/",
 
-      }
     }
   
     
