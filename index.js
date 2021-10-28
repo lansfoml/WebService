@@ -44,7 +44,7 @@ function rowToPlayer(row) {
     response.sendStatus(200);
   });
 
-  app.get('/report.html', function (req, res, next) {
+  service.get('/report.html', function (req, res, next) {
     var options = {
       root: path.join(__dirname, 'public'),
       dotfiles: 'deny',
