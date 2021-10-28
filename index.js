@@ -44,6 +44,26 @@ function rowToPlayer(row) {
     response.sendStatus(200);
   });
 
+  app.get('/report.html', function (req, res, next) {
+    var options = {
+      root: path.join(__dirname, 'public'),
+      dotfiles: 'deny',
+      headers: {
+        'x-timestamp': Date.now(),
+        'x-sent': true
+      }
+    }
+  
+    
+    res.sendFile(/Users/matt/Desktop/Server/report.html, options, function (err) {
+      if (err) {
+        next(err)
+      } else {
+        console.log('Sent:', fileName)
+      }
+    })
+  })
+
   service.get('/id/:id', (request, response) => {
     
     const parameters = request.params.id,
