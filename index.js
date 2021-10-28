@@ -47,8 +47,8 @@ function rowToPlayer(row) {
 
   service.get('/report.html', function (req, res, next) {
     var options = {
-      root: "/Users/matt/Desktop/Server/",
-
+      root: "/Users/matt/Desktop/Server/"
+      
     }
   
     
