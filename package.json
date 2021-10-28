@@ -2,9 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "ws.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node ws.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
