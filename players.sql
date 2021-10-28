@@ -33,8 +33,8 @@ VALUES(2,"LaMelo", "Ball", 20, "Hornets");
 INSERT INTO players(number, firstName, lastName, age, team)
 VALUES(25,"PJ", "Washington", 23, "Hornets");
 INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(1,"John", "Wall", 31, "Rokcets");
+VALUES(1,"John", "Wall", 31, "Rockets");
 INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(0,"Jalen", "Green", 19, "Rokcets");
+VALUES(0,"Jalen", "Green", 19, "Rockets");
 INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(10,"Eric", "Gordon", 32, "Rokcets");
+VALUES(10,"Eric", "Gordon", 32, "Rockets");
