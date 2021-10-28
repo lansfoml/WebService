@@ -56,7 +56,7 @@ function rowToPlayer(row) {
     }
   
     
-    res.sendFile('/Users/matt/Desktop/Server/report.html', options, function (err) {
+    res.sendFile('report.html', options, function (err) {
       if (err) {
         next(err)
       } else {
