@@ -45,20 +45,25 @@ function rowToPlayer(row) {
     response.sendStatus(200);
   });
 
-  service.get('/report.html', function (req, res, next) {
+  service.get('/report.html', function (req, response, next) {
+    
+    response.sendFile(__dirname + '/report.html');
+    /*
     var options = {
       root: "/Users/matt/Desktop/Server"
       
     }
   
     
-    res.sendFile('/report.html', options, function (err) {
+    response.sendFile('/report.html', options, function (err) {
       if (err) {
         next(err)
       } else {
         console.log('Sent:', fileName)
       }
-    })
+      */
+    
+    
   })
 
   service.get('/id/:id', (request, response) => {
