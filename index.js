@@ -45,7 +45,7 @@ function rowToPlayer(row) {
     response.sendStatus(200);
   });
 
-  service.get('/report.html', function (req, response, next) {
+  service.get('/report.html', (req, response) => {
     
     response.sendFile(__dirname + '/report.html');
     /*
