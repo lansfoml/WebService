@@ -111,6 +111,31 @@ function rowToPlayer(row) {
     });
   });
 
+  service.get('/name/:firstName/:lastName', (request, response) => {
+    
+    const parameters = [
+      request.params.firstName,
+      request.params.lastName,
+    ]
+
+    query = 'SELECT * FROM players WHERE firstName = ? AND lastName = ?';
+    connection.query(query, parameters, (error, rows) => {
+      if (error) {
+        response.status(500);
+        response.json({
+          ok: false,
+          results: error.message,
+        });
+      } else {
+        const players = rows.map(rowToPlayer);
+        response.json({
+          ok: true,
+          results: rows.map(rowToPlayer),
+        });
+      }
+    });
+  });
+
   service.get('/age/:age', (request, response) => {
     
     const parameters = request.params.age,
