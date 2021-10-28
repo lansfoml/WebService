@@ -45,7 +45,7 @@ function rowToPlayer(row) {
     response.sendStatus(200);
   });
 
-  service.get('/Users/matt/Desktop/Server/report.html', function (req, res, next) {
+  service.get('/report.html', function (req, res, next) {
     var options = {
       root: path.join(__dirname, 'public'),
       dotfiles: 'deny',
@@ -56,7 +56,7 @@ function rowToPlayer(row) {
     }
   
     
-    res.sendFile('/report.html', options, function (err) {
+    res.sendFile('/Users/matt/Desktop/Server/report.html', options, function (err) {
       if (err) {
         next(err)
       } else {
