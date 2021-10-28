@@ -6,6 +6,7 @@ const credentials = JSON.parse(fs.readFileSync('credentials.json', 'utf8'));
 const connection = mysql.createConnection(credentials);
 
 const service = express();
+const path = require('path');
 
 connection.connect(error => {
   if (error) {
