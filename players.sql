@@ -13,15 +13,7 @@ CREATE TABLE players (
 
 );
 
--- CREATE TABLE attributes (
---   id INTEGER REFERENCES players(id),,
---   Speed INT,
---   Shooting INT,
---   Passing INT,
-  
 
-
--- );
 
 -- LAKERS
 INSERT INTO players(number, firstName, lastName, age, team)
