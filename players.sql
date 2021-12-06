@@ -35,23 +35,23 @@ VALUES(0,"Russell", "Westbrook", 33, "Lakers", "PG");
 
 
 --NETS
-INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(7,"Kevin", "Durant", 33, "Nets");
-INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(11,"Kyrie", "Irving", 29, "Nets");
-INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(13,"James", "Harden", 32, "Nets");
-INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(12,"Joe", "Harris", 30, "Nets");
+-- INSERT INTO players(number, firstName, lastName, age, team, position)
+-- VALUES(7,"Kevin", "Durant", 33, "Nets");
+-- INSERT INTO players(number, firstName, lastName, age, team, position)
+-- VALUES(11,"Kyrie", "Irving", 29, "Nets");
+-- INSERT INTO players(number, firstName, lastName, age, team, position)
+-- VALUES(13,"James", "Harden", 32, "Nets");
+-- INSERT INTO players(number, firstName, lastName, age, team, position)
+-- VALUES(12,"Joe", "Harris", 30, "Nets");
 
---HORNETS
-INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(2,"LaMelo", "Ball", 20, "Hornets");
-INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(25,"PJ", "Washington", 23, "Hornets");
-INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(1,"John", "Wall", 31, "Rockets");
-INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(0,"Jalen", "Green", 19, "Rockets");
-INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(10,"Eric", "Gordon", 32, "Rockets");
+-- --HORNETS
+-- INSERT INTO players(number, firstName, lastName, age, team, position)
+-- VALUES(2,"LaMelo", "Ball", 20, "Hornets");
+-- INSERT INTO players(number, firstName, lastName, age, team, position)
+-- VALUES(25,"PJ", "Washington", 23, "Hornets");
+-- INSERT INTO players(number, firstName, lastName, age, team, position)
+-- VALUES(1,"John", "Wall", 31, "Rockets");
+-- INSERT INTO players(number, firstName, lastName, age, team, position)
+-- VALUES(0,"Jalen", "Green", 19, "Rockets");
+-- INSERT INTO players(number, firstName, lastName, age, team), position
+-- VALUES(10,"Eric", "Gordon", 32, "Rockets");
