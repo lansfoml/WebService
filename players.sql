@@ -32,6 +32,8 @@ INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(10,"Deandre", "Jordan", 33, "Lakers", "C");
 INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(0,"Russell", "Westbrook", 33, "Lakers", "PG");
+INSERT INTO players(number, firstName, lastName, age, team, position)
+VALUES(0,"Frank", "Vogel", 48, "Lakers", "coach");
 
 
 
@@ -43,12 +45,16 @@ INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(13,"James", "Harden", 32, "Nets", "SG");
 INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(12,"Joe", "Harris", 30, "Nets", "SF");
+INSERT INTO players(number, firstName, lastName, age, team, position)
+VALUES(0,"Steve", "Nash", 48, "Nets", "coach");
 
 
 INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(2,"LaMelo", "Ball", 20, "Hornets", "PG");
 INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(25,"PJ", "Washington", 23, "Hornets", "PG");
+INSERT INTO players(number, firstName, lastName, age, team, position)
+VALUES(0,"James", "Borrego", 44, "Nets", "coach");
 
 
 INSERT INTO players(number, firstName, lastName, age, team, position)
@@ -57,3 +63,5 @@ INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(0,"Jalen", "Green", 19, "Rockets", "SG");
 INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(10,"Eric", "Gordon", 32, "Rockets", "PF");
+INSERT INTO players(number, firstName, lastName, age, team, position)
+VALUES(0,"Stephen", "Silas", 48, "Rockets", "coach");
