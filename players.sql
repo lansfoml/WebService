@@ -55,5 +55,5 @@ INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(1,"John", "Wall", 31, "Rockets", "PG");
 INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(0,"Jalen", "Green", 19, "Rockets", "SG");
-INSERT INTO players(number, firstName, lastName, age, team), position
+INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(10,"Eric", "Gordon", 32, "Rockets", "PF");
