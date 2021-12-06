@@ -7,19 +7,42 @@ CREATE TABLE players (
   lastName TEXT NOT NULL,
   age INT,
   team TEXT NOT NULL,
+  position TEXT NOT NULL,
   is_deleted INT DEFAULT 0
 
 
 );
 
+-- CREATE TABLE attributes (
+--   id INTEGER REFERENCES players(id),,
+--   Speed INT,
+--   Shooting INT,
+--   Passing INT,
+  
+
+
+-- );
+
+-- LAKERS
 INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(7,"Carmello", "Anthony", 37, "Lakers");
+VALUES(7,"Carmello", "Anthony", 37, "Lakers", "PF");
 INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(3,"Anthony", "Davis", 28, "Lakers");
+VALUES(3,"Anthony", "Davis", 28, "Lakers", "PF");
 INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(6,"Lebron", "James", 36, "Lakers");
+VALUES(6,"Lebron", "James", 36, "Lakers", "SF");
 INSERT INTO players(number, firstName, lastName, age, team)
-VALUES(1,"Trevor", "Ariza", 36, "Lakers");
+VALUES(1,"Trevor", "Ariza", 36, "Lakers", "SF");
+INSERT INTO players(number, firstName, lastName, age, team)
+VALUES(1,"Avery", "Bradley", 31, "Lakers", "PG");
+INSERT INTO players(number, firstName, lastName, age, team)
+VALUES(9,"Kent", "Bazemore", 23, "Lakers", "SF");
+INSERT INTO players(number, firstName, lastName, age, team)
+VALUES(10,"Deandre", "Jordan", 33, "Lakers", "C");
+INSERT INTO players(number, firstName, lastName, age, team)
+VALUES(0,"Russell", "Westbrook", 33, "Lakers", "PG");
+
+
+--NETS
 INSERT INTO players(number, firstName, lastName, age, team)
 VALUES(7,"Kevin", "Durant", 33, "Nets");
 INSERT INTO players(number, firstName, lastName, age, team)
@@ -28,6 +51,8 @@ INSERT INTO players(number, firstName, lastName, age, team)
 VALUES(13,"James", "Harden", 32, "Nets");
 INSERT INTO players(number, firstName, lastName, age, team)
 VALUES(12,"Joe", "Harris", 30, "Nets");
+
+--HORNETS
 INSERT INTO players(number, firstName, lastName, age, team)
 VALUES(2,"LaMelo", "Ball", 20, "Hornets");
 INSERT INTO players(number, firstName, lastName, age, team)
