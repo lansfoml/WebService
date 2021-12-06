@@ -16,21 +16,21 @@ CREATE TABLE players (
 
 
 -- LAKERS
-INSERT INTO players(number, firstName, lastName, age, team)
+INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(7,"Carmello", "Anthony", 37, "Lakers", "PF");
-INSERT INTO players(number, firstName, lastName, age, team)
+INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(3,"Anthony", "Davis", 28, "Lakers", "PF");
-INSERT INTO players(number, firstName, lastName, age, team)
+INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(6,"Lebron", "James", 36, "Lakers", "SF");
-INSERT INTO players(number, firstName, lastName, age, team)
+INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(1,"Trevor", "Ariza", 36, "Lakers", "SF");
-INSERT INTO players(number, firstName, lastName, age, team)
+INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(1,"Avery", "Bradley", 31, "Lakers", "PG");
-INSERT INTO players(number, firstName, lastName, age, team)
+INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(9,"Kent", "Bazemore", 23, "Lakers", "SF");
-INSERT INTO players(number, firstName, lastName, age, team)
+INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(10,"Deandre", "Jordan", 33, "Lakers", "C");
-INSERT INTO players(number, firstName, lastName, age, team)
+INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(0,"Russell", "Westbrook", 33, "Lakers", "PG");
 
 
