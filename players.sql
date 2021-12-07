@@ -74,7 +74,7 @@ VALUES(10,"Ish", "Smith", 33, "Hornets", "PG");
 INSERT INTO players(number, firstName, lastName, age, team, position)
 VALUES(3,"Terry", "Rozier", 27, "Hornets", "SG");
 INSERT INTO players(number, firstName, lastName, age, team, position)
-VALUES(0,"James", "Borrego", 44, "Nets", "Coach");
+VALUES(0,"James", "Borrego", 44, "Hornets", "Coach");
 
 
 INSERT INTO players(number, firstName, lastName, age, team, position)
