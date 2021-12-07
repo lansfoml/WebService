@@ -30,6 +30,7 @@ function rowToPlayer(row) {
       lastName: row.lastName,
       age: row.age,
       team: row.team,
+      position: row.position,
       
     };
   }
